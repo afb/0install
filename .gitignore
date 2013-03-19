@@ -3,3 +3,4 @@
 .tags
 share/locale/zero-install.pot
 /build/
+pylint.txt

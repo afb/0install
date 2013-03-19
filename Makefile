@@ -13,6 +13,11 @@ translations: $(MO)
 install: all
 	$(PYTHON) setup.py install --force
 
+pylint: pylint.txt
+
+pylint.txt: pylintrc $(PY)
+	pylint -f parseable $(PY) | tee $@
+
 %.mo: %.po
 	msgfmt -o "$@" "$<"
 

@@ -1,0 +1,36 @@
+[MESSAGES CONTROL]
+
+# Enable the message, report, category or checker with the given id(s). You can
+# either give multiple identifier separated by comma (,) or put this option
+# multiple time.
+#enable=
+
+# Disable the message, report, category or checker with the given id(s). You
+# can either give multiple identifier separated by comma (,) or put this option
+# multiple time (only on the command line, not in the configuration file where
+# it should appear only once).
+disable=W0312,C0301,C0103,C0111,C0321
+
+### W0312: Found indentation with tabs instead of spaces
+
+### C0103: Invalid name
+### C0111: Missing docstring
+### C0301: Line too long
+### C0321: More than one statement on a single line
+
+[REPORTS]
+
+# Set the output format. Available formats are text, parseable, colorized, msvs
+# (visual studio) and html
+output-format=parseable
+
+# Include message's id in output
+include-ids=yes
+
+# Put messages in a separate file for each module / package specified on the
+# command line instead of printing them on stdout. Reports (if any) will be
+# written in a file name "pylint_global.[txt|html]".
+files-output=no
+
+# Tells whether to display a full report or only the messages
+reports=yes
